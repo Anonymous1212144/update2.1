@@ -1,0 +1,38 @@
+{
+  "client": [
+  ],
+  "compatibilityLevel": "JAVA_11",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8",
+  "mixins": [
+    "SquidGoals.SwimGoalMixin",
+    "SquidMixin",
+    "AbstractSkeletonMixin",
+    "WitherSkeletonMixin",
+    "SkeletonHorseMixin",
+    "TrapTriggerMixin",
+    "EndermanMixin",
+    "IllusionerMixin",
+    "IllusionerRendererMixin",
+    "WitchMixin",
+    "dragon.EnderDragonMixin",
+    "dragon.LandingApproachMixin",
+    "dragon.HoldingMixin",
+    "dragon.ChargingPlayerMixin",
+    "WitherMixin",
+    "ArmorStandMixin",
+    "LivingEntityMixin",
+    "EntityMixin",
+    "SnowBlockMixin",
+    "LeavesMixin",
+    "BlockColorsMixin",
+    "GameRendererMixin",
+    "WorldRendererMixin",
+    "MinecraftClientMixin",
+    "InteractionManagerMixin"
+  ],
+  "package": "singleplayer.update.mixin",
+  "required": true
+}

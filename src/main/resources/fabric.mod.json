@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "update",
+  "version": "${version}",
+  "name": "Update 2.1",
+  "description": "Minecraft Update 2.1!",
+  "authors": [
+    "Anonymous1212144"
+  ],
+  "contact": {
+    "homepage": "https://www.youtube.com/channel/UCStYbXooQ0OjbKz9d3hWKFA",
+    "issues": "https://github.com/Anonymous1212144/update/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/update/icon.png",
+  "environment": "client",
+  "mixins": [
+    "update.mixins.json"
+  ]
+}
