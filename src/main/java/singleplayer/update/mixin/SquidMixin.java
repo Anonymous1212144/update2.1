@@ -44,16 +44,15 @@ public class SquidMixin extends WaterCreatureEntity {
         }
     }
 
-    @Inject(at=@At("HEAD"), method="tickMovement")
+    @Inject(at=@At(value="INVOKE", target="net/minecraft/entity/mob/WaterCreatureEntity.tickMovement()V", shift = At.Shift.AFTER), method="tickMovement")
     public void getSpeed(CallbackInfo inf) {
-        super.tickMovement();
         velocity = squid.getVelocity();
     }
 
     @Inject(at=@At("TAIL"), method="tickMovement")
     public void editSpeed(CallbackInfo inf) {
         if (!squid.isInsideWaterOrBubbleColumn()) {
-            squid.addVelocity(velocity.multiply(new Vec3d(0.7D, 0.1D, 0.7D)));
+            squid.addVelocity(velocity.multiply(new Vec3d(0.8D, 0.1D, 0.8D)));
         } else if (squid.getWorld().getBlockState(squid.getBlockPos()).isOf(Blocks.BUBBLE_COLUMN)) {
             velocity = velocity.multiply(new Vec3d(0D, 0.9D, 0D)).add(squid.getVelocity().multiply(new Vec3d(1D, 0D, 1D)));
             squid.setVelocity(velocity);

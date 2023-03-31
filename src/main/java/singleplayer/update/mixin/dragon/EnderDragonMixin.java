@@ -13,7 +13,6 @@ public class EnderDragonMixin {
 
     EnderDragonEntity dragon = (EnderDragonEntity)(Object)this;
 
-    //@Inject(at=@At("HEAD"), method="getNearestPathNodeIndex")
     @ModifyVariable(at = @At("HEAD"), method = "getNearestPathNodeIndex(DDD)I", ordinal = 1, argsOnly = true)
     public double getNearestPathNodeIndex(double y) {
         if (y != 105) {return y;}

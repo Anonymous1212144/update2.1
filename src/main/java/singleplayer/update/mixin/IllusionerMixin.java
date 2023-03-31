@@ -29,6 +29,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 
 import net.minecraft.util.math.random.Random;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(IllusionerEntity.class)
 public class IllusionerMixin extends SpellcastingIllagerEntity implements RangedAttackMob {
@@ -62,7 +65,8 @@ public class IllusionerMixin extends SpellcastingIllagerEntity implements Ranged
     public boolean isSpellcasting() {
         if (this.mirrorSpellTimer == 255 || this.spellCooldown > 0) {
             StackTraceElement[] stack = Thread.currentThread().getStackTrace();
-            return stack[2].getMethodName().equals("canStart");
+            String methodName = stack[2].getMethodName();
+            return methodName.equals("canStart") || methodName.equals("method_6264");
         }
         return super.isSpellcasting();
     }
@@ -71,11 +75,11 @@ public class IllusionerMixin extends SpellcastingIllagerEntity implements Ranged
     public boolean addStatusEffect(StatusEffectInstance effect, @Nullable Entity source) {
         if (effect.getEffectType() == StatusEffects.INVISIBILITY && effect.getDuration() == 1200 && source == null && this.mirrorSpellTimer != 255 && illusioner.getTarget() != null) {
             this.summonTimer = 40;
-            this.appearTimer = this.random.nextInt(20);
-            effect = new StatusEffectInstance(StatusEffects.INVISIBILITY, 20+this.appearTimer);
+            this.appearTimer = 20 + this.random.nextInt(20);
+            effect = new StatusEffectInstance(StatusEffects.INVISIBILITY, this.appearTimer);
             boolean bl = super.addStatusEffect(effect);
             illusioner.world.addParticle(ParticleTypes.CLOUD, illusioner.getParticleX(0.5), illusioner.getRandomBodyY(), illusioner.offsetZ(0.5), 0.0, 0.0, 0.0);
-            for(int i = 0; i < 64; ++i) {
+            for (int i = 0; i < 64; ++i) {
                 if (this.teleportTo(illusioner, illusioner.getTarget())) {
                     return bl;
                 }
@@ -109,6 +113,11 @@ public class IllusionerMixin extends SpellcastingIllagerEntity implements Ranged
         }
     }
 
+    @Inject(at=@At("RETURN"), method="getMirrorCopyOffsets", cancellable = true)
+    void removeOffsets(float tickDelta, CallbackInfoReturnable<Vec3d[]> cir) {
+        cir.setReturnValue(new Vec3d[0]);
+    }
+
     boolean teleportTo(IllusionerEntity illusionerEntity, LivingEntity target) {
         Vec3d pos = target.getPos();
         int x = (int)(pos.getX() + (random.nextDouble() - 0.5D) * 16.0D);
@@ -134,7 +143,7 @@ public class IllusionerMixin extends SpellcastingIllagerEntity implements Ranged
         if (illusionerEntity == null) {return;}
         LocalDifficulty localDifficulty = world.getLocalDifficulty(illusioner.getBlockPos());
         illusionerEntity.initialize((ServerWorld)world, localDifficulty, SpawnReason.TRIGGERED, null, null);
-        if (!teleportTo(illusionerEntity, target)) {return;}
+        if (!teleportTo(illusionerEntity, target) && !teleportTo(illusionerEntity, target)) {return;}
         illusionerEntity.setTarget(target);
         illusionerEntity.age = random.nextInt(200);
         ((ServerWorld)world).spawnEntityAndPassengers(illusionerEntity);

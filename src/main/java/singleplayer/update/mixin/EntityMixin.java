@@ -13,7 +13,8 @@ public class EntityMixin {
     Vec3d setVelocity(Vec3d velocity) {
         StackTraceElement[] stack = Thread.currentThread().getStackTrace();
         for (StackTraceElement stackTraceElement : stack) {
-            if (stackTraceElement.getClassName().equals("net.minecraft.entity.boss.dragon.EnderDragonEntity")) {
+            String className = stackTraceElement.getClassName();
+            if (className.equals("net.minecraft.entity.boss.dragon.EnderDragonEntity") || className.equals("net.minecraft.class_1510")) {
                 Vec3d accel = velocity.subtract(((Entity)(Object)this).getVelocity());
                 if (accel.getY()*velocity.getY() > 0) {
                     return velocity.add(accel.multiply(new Vec3d(1, 3, 1)));

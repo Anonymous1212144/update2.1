@@ -43,6 +43,6 @@ public class SkeletonHorseMixin extends AbstractHorseEntity{
     }
 
     public EntityView method_48926() {
-        return null;
+        return super.getWorld();
     }
 }

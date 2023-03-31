@@ -19,7 +19,7 @@ public class SwimGoalMixin extends Goal {
 
     public boolean canStart(){return true;}
 
-    public boolean submerged(BlockPos blockPos) {
+    boolean submerged(BlockPos blockPos) {
         return this.squid.getWorld().getBlockState(blockPos).getFluidState().getFluid() instanceof WaterFluid;
     }
 
@@ -30,12 +30,12 @@ public class SwimGoalMixin extends Goal {
             this.squid.setSwimmingVector(0.0f, 0.0f, 0.0f);
         } else if (this.squid.getRandom().nextInt(SwimGoalMixin.toGoalTicks(50)) == 0 || !submerged(this.squid.getBlockPos()) || !this.squid.hasSwimmingVector()) {
             float f = this.squid.getRandom().nextFloat() * ((float)Math.PI * 2);
-            float g = MathHelper.cos(f) * 0.15f;
-            float h = -0.1f + this.squid.getRandom().nextFloat() * 0.15f;
-            float j = MathHelper.sin(f) * 0.15f;
-            Vec3d targetPos = this.squid.getPos().add((new Vec3d(g, h, j)).multiply(10));
-            if (submerged((new BlockPos((int)targetPos.getX(), (int)targetPos.getY(), (int)targetPos.getZ())))) {
-                //LOGGER.info(targetPos.toString());
+            float g = MathHelper.cos(f) * 0.2f;
+            float h = -0.1f + this.squid.getRandom().nextFloat() * 0.2f;
+            float j = MathHelper.sin(f) * 0.2f;
+            Vec3d targetPos = this.squid.getPos().add(new Vec3d(g, h, j).multiply(10));
+            BlockPos blockPos = new BlockPos((int)targetPos.getX(), (int)targetPos.getY(), (int)targetPos.getZ());
+            if (submerged(blockPos)) {
                 this.squid.setSwimmingVector(g, h, j);
             } else {
                 this.squid.setSwimmingVector(0.0f, 0.0f, 0.0f);
