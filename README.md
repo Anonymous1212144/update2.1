@@ -3,11 +3,10 @@ The update you've all waited too long for!
 
 IMPORTANT
 ==========
-This mode is made for 1.19.4 SINGLEPLAYER
-This mod does NOT require Fabric API.
-This mod is NOT compatible with Sodium, and compatibility with other mods are not guaranteed.
-Mods that should work fine: Fabric API, FerriteCore, Krypton, Lithium, Modmenu, Starlight
-
+- This mode is made for 1.19.4 SINGLEPLAYER.
+- This mod does NOT require Fabric API.
+- This mod is NOT compatible with Sodium, and compatibility with other mods are not guaranteed.
+- Mods that should work fine: Fabric API, FerriteCore, Krypton, Lithium, Modmenu, Starlight
 
 Changelog
 ========
