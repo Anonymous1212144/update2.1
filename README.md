@@ -1,41 +1,67 @@
-# Minecraft Update 2.1
+# Minecraft Update 2.2 (README IS WIP: NOT DONE YET)
 The update you've all waited too long for!
 
 IMPORTANT
 ==========
-- This mode is made for 1.19.4 SINGLEPLAYER.
+- This mode is made for 1.20.4 SINGLEPLAYER.
 - This mod does NOT require Fabric API.
-- This mod is NOT compatible with Sodium, and compatibility with other mods are not guaranteed.
-- Mods that should work fine: Fabric API, FerriteCore, Krypton, Lithium, Modmenu, Starlight
+- This mod is NOT compatible with Sodium, and compatibility with other mods is unlikely (since it changed basically everything).
+- Mods that should work fine: Fabric API, Modmenu
 
 Changelog
 ========
 I have no idea why you would want to read through this since I obviously already told you everything in the video
 (https://www.youtube.com/watch?v=TlUWKCvb9D8&feature=youtu.be)
 NOTE - possible spoilers ahead
+The asterisk (*) represents a feature that is present in 2.1 and is either improved or unchanged (see more details on the release page)
 
-- Armour stands now comes with arms on default
-- Blocks can be placed and broken much faster in Creative mode when the player is moving
-- Camera tilt with the player when using elytra or Riptide Trident
-- Chunk loading now uses fog to make it look smoother
-- Invisibility potion now works much better if you aren't wearing/holding anything.
-    - Mobs can now lose track of you even if you attacked them.
-- Leaves turn white during snow
-- Mobs no longer fight others of the same kind
-- Snow now respond to gravity
-- Squid physics are less broken, and they will now try to not beach as much.
-    - OMG the squid code is absolutely atrocious. If I want to completely fix it I'll basically have to scrap the entire thing and re-write it...
-- Squid's self-defence now gives you blindness
-    - Blindness have also been buffed, making mobs with it unable to target other mobs over 5 blocks away
+- *Armour stands now comes with arms on default
+- Bad Omen and Hero of the Village now play an animation when you get it
+- Bane of arthropods now gives arthropods every bad status effect so you can maximize their suffering
+- *Blocks can be placed and broken much faster in Creative mode when the player is moving
+- Books textures now flip on even-numbered pages
+- *Camera tilt with the player when using Elytra or Riptide Trident
+- *Chunk loading now uses fog to make it look smoother
+- Feather falling now decreases the ease of trampling crop for each level
+- Fishing rods also pull the user with the same force and can pull entities off their mount
+- Flying in creative mode has more friction, so it stops faster
+- Hotbars display more information about the item you're holding
+- HUD now becomes more transparent when inactive for some time
+- *Invisibility potion now works much better if you aren't wearing/holding anything.
+    - *Mobs can now lose track of you even if you attacked them.
+- Items now become slightly larger when selected
+- Leads can be attached to walls too
+- *Leaves turn white during snow
+- Lightweight RTX for block light
+- *Mobs no longer fight others of the same kind
+- Nausea has a stronger effect
+- Parrots dance on your shoulder as well
+- Shulkers can now be dyed
+- Simple shadows for sky light
+- Sky becomes darker when you look at the sun
+- Some sound physics like Doppler effects, absorption at the fluid interface, reverb (WIP)
+- *Snow now responds to gravity and combines with other snow
+- Snowballs can freeze you if you are hit with it enough
+- *Squid physics is now mostly fixed, and they will now try to not beach as much
+- *Squid's self-defence now gives you blindness
+    - *Blindness has also been buffed, making mobs with it unable to target other mobs over 5 blocks away
+- Using a bow now has a unique pose for many entities
+- You can shoot your crossbow while lying in bed
 - Note that invisibility and blindness buff doesn't work on the Warden (duh)
-- Enderman now utilize their ability more effectively
-- Illusioner is now fully fleshed out, although it still doesn't spawn naturally
-- Piglin crossbows stop magically uncharging
-- Skeleton and some other ranged mob now have better accuracy
-- Wither skeletons and strays learned some skills too
-- Skeleton Horseman have more control over their horse
-- Witches use better potions
-- The Ender Dragon gained an interest in becoming the next Smash Ultimate character
-    - The Ender Dragon also flies and shoots better
-- The Wither is now less submissive during spawn animation
+- Complete darkness is now scarier
+- *Endermen now utilize their ability more effectively
+- Evokers are more accurate and use items better
+- Fixed some physics
+- *Illusioners are now fully fleshed out, and spawn in some circumstances
+- *Piglins and Pillagers now use crossbows better
+- Ravagers are more careless
+- *Skeleton and some other ranged mobs now have better accuracy and better AI
+- *Wither skeletons and strays learned some skills too
+- *Skeleton Horseman have more control over their horse
+- Vexes are more aggressive
+- Wardens have a special shader when you look at them in Spectator mode
+- *Witches use better potions
+- *The Ender Dragon gained an interest in becoming the next Smash Ultimate character
+    - *The Ender Dragon also flies and shoots better
+- *The Wither is now less submissive during spawn animation
 - Readded Herobrine
