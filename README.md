@@ -1,4 +1,4 @@
-# Minecraft Update 2.2 (README IS WIP: NOT DONE YET)
+# Minecraft Update 2.2
 The update you've all waited too long for!
 
 IMPORTANT
@@ -7,12 +7,15 @@ IMPORTANT
 - This mod does NOT require Fabric API.
 - This mod is NOT compatible with Sodium, and compatibility with other mods is unlikely (since it changed basically everything).
 - Mods that should work fine: Fabric API, Modmenu
+- The source code will be released when this is more polished
 
 Changelog
 ========
 I have no idea why you would want to read through this since I obviously already told you everything in the video
-(https://www.youtube.com/watch?v=TlUWKCvb9D8&feature=youtu.be)
+(https://youtu.be/xpvYWvjNN3s)
+
 NOTE - possible spoilers ahead
+
 The asterisk (*) represents a feature that is present in 2.1 and is either improved or unchanged (see more details on the release page)
 
 - *Armour stands now comes with arms on default
