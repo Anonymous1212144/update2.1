@@ -17,6 +17,7 @@ I have no idea why you would want to read through this since I obviously already
 NOTE - possible spoilers ahead
 
 The asterisk (*) represents a feature that is present in 2.1 and is either improved or unchanged (see more details on the release page)
+The exclamation mark (!) represents a feature that no longer exists and is only in older versions
 
 - *Armour stands now comes with arms on default
 - Bad Omen and Hero of the Village now play an animation when you get it
@@ -37,7 +38,7 @@ The asterisk (*) represents a feature that is present in 2.1 and is either impro
 - *Leaves turn white during snow
 - Lightweight RTX for block light
 - *Mobs no longer fight others of the same kind
-- Nausea has a stronger effect
+- !Nausea has a stronger effect
 - Parrots dance on your shoulder as well
 - Shulkers can now be dyed
 - Simple shadows for sky light
@@ -62,7 +63,7 @@ The asterisk (*) represents a feature that is present in 2.1 and is either impro
 - *Wither skeletons and strays learned some skills too
 - *Skeleton Horseman have more control over their horse
 - Vexes are more aggressive
-- Wardens have a special shader when you look at them in Spectator mode
+- !Wardens have a special shader when you look at them in Spectator mode
 - *Witches use better potions
 - *The Ender Dragon gained an interest in becoming the next Smash Ultimate character
     - *The Ender Dragon also flies and shoots better
