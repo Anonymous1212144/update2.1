@@ -17,6 +17,7 @@ I have no idea why you would want to read through this since I obviously already
 NOTE - possible spoilers ahead
 
 The asterisk (*) represents a feature that is present in 2.1 and is either improved or unchanged (see more details on the release page)
+
 The exclamation mark (!) represents a feature that no longer exists and is only in older versions
 
 - *Armour stands now comes with arms on default
