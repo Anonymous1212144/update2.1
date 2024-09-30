@@ -1,9 +1,9 @@
-# Minecraft Update 2.2
+# Minecraft Update 2.2.1
 The update you've all waited too long for!
 
 IMPORTANT
 ==========
-- This mode is made for 1.20.4 SINGLEPLAYER (might work with earlier 1.20 versions but haven't tested it yet)
+- This mod is made for 1.21.1 SINGLEPLAYER (might work with earlier 1.21 versions but haven't tested it yet)
 - This mod does NOT require Fabric API.
 - This mod is NOT compatible with Sodium, and compatibility with other mods is unlikely (since it changed basically everything).
 - Mods that should work fine: Fabric API, Modmenu
