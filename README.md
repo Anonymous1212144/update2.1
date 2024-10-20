@@ -1,4 +1,4 @@
-# Minecraft Update 2.2.1
+# Minecraft Update 2.2.2
 The update you've all waited too long for!
 
 IMPORTANT
@@ -20,11 +20,14 @@ The asterisk (*) represents a feature that is present in 2.1 and is either impro
 
 The exclamation mark (!) represents a feature that no longer exists and is only in older versions
 
+- /anger \<mobs to get angry> \<living entity to get angry at>. Makes a group of mobs angry at a living entity
+- /angermutual <angry mob 1> <angry mob 2>. Make 2 mobs angry at each other
 - *Armour stands now comes with arms on default
 - Bad Omen and Hero of the Village now play an animation when you get it
 - Bane of arthropods now gives arthropods every bad status effect so you can maximize their suffering
 - *Blocks can be placed and broken much faster in Creative mode when the player is moving
 - Books textures now flip on even-numbered pages
+- Camera tilts during death to match player avatar
 - *Camera tilt with the player when using Elytra or Riptide Trident
 - *Chunk loading now uses fog to make it look smoother
 - Feather falling now decreases the ease of trampling crop for each level
@@ -41,6 +44,7 @@ The exclamation mark (!) represents a feature that no longer exists and is only 
 - *Mobs no longer fight others of the same kind
 - !Nausea has a stronger effect
 - Parrots dance on your shoulder as well
+- Players instantly kicked upon death in Hardcore
 - Shulkers can now be dyed
 - Simple shadows for sky light
 - Sky becomes darker when you look at the sun
