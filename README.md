@@ -14,7 +14,7 @@ Changelog
 I have no idea why you would want to read through this since I obviously already told you everything in the video
 (https://youtu.be/xpvYWvjNN3s)
 
-NOTE - This is originally an April Fool's mod, but I decided to make the "April's Fools" part into a "running joke" so I can release updates more frequently. If you read ahead you may encounter ***SPOILERS***
+NOTE - This is originally an April Fool's mod, but I decided to make the "April's Fools" part into a "running joke" so I can release updates more frequently. If you read ahead ***YOU MAY ENCOUNTER SPOILERS***
 
 The asterisk (*) represents a feature that is present in 2.1 and is either improved or unchanged (see more details on the release page)
 
