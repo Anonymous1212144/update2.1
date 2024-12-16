@@ -9,6 +9,15 @@ IMPORTANT
 - Mods that should work fine: Fabric API, Modmenu
 - The source code will be released when this is more polished
 
+Feedback Info
+==========
+I am actively looking for feedback and would appreciate any. However, please read the following note if you intend to provide them:
+- This mod is intended to be more of a Vanilla+ type of mod. Every change made should minimize interference with Mojang's intended playstyle, lore, etc. So for example the things I will not add (or avoid as much as I can):
+  - Unjustified abilities for mobs (e.g. flying creepers)
+  - Unjustified stat buffs (e.g. double creeper hp)
+  - New items, mobs, blocks, etc.
+- My interpretation of Mojang's intentions is taken from a variety of official sources (spinoff games, books, etc.), but it may be incorrect. If you think it is incorrect feel free to bring it up, as feedback lore-wise is equally appreciated.
+
 Changelog
 ========
 I have no idea why you would want to read through this since I obviously already told you everything in the video
