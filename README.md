@@ -11,13 +11,13 @@ IMPORTANT
 
 Feedback Info
 ==========
-I am actively looking for feedback and would appreciate any. However, please read the following note if you intend to provide them:
+I am actively looking for feedback and would appreciate any. However, please read the following notes if you intend to provide them:
 - This mod is intended to be more of a Vanilla+ type of mod. Every change made should minimize interference with Mojang's intended playstyle, lore, etc. So for example the things I will not add (or avoid as much as I can):
   - Unjustified abilities for mobs (e.g. flying creepers)
   - Unjustified stat buffs (e.g. double creeper hp)
   - New items, mobs, blocks, etc.
 - My interpretation of Mojang's intentions is taken from a variety of official sources (spinoff games, books, etc.), but it may be incorrect. If you think it is incorrect feel free to bring it up, as feedback lore-wise is equally appreciated.
-- You can provide feedback on the Issues page here on Github, or you can message me on YouTube, Discord, or any other platform you can find me on lol
+- You can provide feedback on the Issues page here on GitHub, or you can message me on YouTube, Discord, or any other platform you can find me on lol
   - Youtube channel link: https://www.youtube.com/@nh_999
   - Discord server link: https://discord.com/invite/EekPNJG8HA
 
@@ -39,7 +39,7 @@ The exclamation mark (!) represents a feature that no longer exists and is only 
 - Bane of arthropods now gives arthropods every bad status effect so you can maximize their suffering
 - *Blocks can be placed and broken much faster in Creative mode when the player is moving
 - Books textures now flip on even-numbered pages
-- Camera tilts during death to match player avatar
+- Camera tilts during death to match player's avatar
 - *Camera tilt with the player when using Elytra or Riptide Trident
 - *Chunk loading now uses fog to make it look smoother
 - Feather falling now decreases the ease of trampling crop for each level
