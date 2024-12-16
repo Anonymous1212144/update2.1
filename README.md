@@ -17,6 +17,9 @@ I am actively looking for feedback and would appreciate any. However, please rea
   - Unjustified stat buffs (e.g. double creeper hp)
   - New items, mobs, blocks, etc.
 - My interpretation of Mojang's intentions is taken from a variety of official sources (spinoff games, books, etc.), but it may be incorrect. If you think it is incorrect feel free to bring it up, as feedback lore-wise is equally appreciated.
+- You can provide feedback on the Issues page here on Github, or you can message me on YouTube, Discord, or any other platform you can find me on lol
+  - Youtube channel link: https://www.youtube.com/@nh_999
+  - Discord server link: https://discord.com/invite/EekPNJG8HA
 
 Changelog
 ========
